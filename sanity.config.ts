@@ -1,6 +1,7 @@
 /**
  * This configuration is used to for the Sanity Studio that’s mounted on the `\app\studio\[[...index]]\page.tsx` route
  */
+
 import Logo from './components/Logo'
 import StudioNavbar from './components/StudioNavbar'
 import {visionTool} from '@sanity/vision'
@@ -10,6 +11,7 @@ import {deskTool} from 'sanity/desk'
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import {apiVersion, dataset, projectId} from './sanity/env'
 import {schema} from './sanity/schema'
+import { getDefaultDocumentNode } from './structure'
 
 export default defineConfig({
   basePath: '/studio',
